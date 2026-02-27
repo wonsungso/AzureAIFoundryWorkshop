@@ -1,6 +1,6 @@
-# 🚀 Azure AI Foundry Workshop
+# 🚀 Microsoft Foundry Workshop
 
-이 워크샵은 **Azure AI Foundry**를 활용하여 실제 기업 환경에서 생성형 AI 애플리케이션을 어떻게 설계·구현·운영할 수 있는지를 엔드투엔드로 체험할 수 있도록 구성되었습니다.  
+이 워크샵은 **Microsoft Foundry**를 활용하여 실제 기업 환경에서 생성형 AI 애플리케이션을 어떻게 설계·구현·운영할 수 있는지를 엔드투엔드로 체험할 수 있도록 구성되었습니다.  
 
 참가자는 단순히 모델을 호출하는 수준을 넘어,  
 - 데이터를 연결하고 임베딩하여 검색 가능한 지식으로 만드는 과정,  
@@ -10,7 +10,7 @@
 
 ---
 
-### 1. Azure AI Foundry 기본 구성
+### 1. Microsoft Foundry 기본 구성
 - Foundry **Hub** 및 **Project** 생성
 - Azure OpenAI, AI Search, Storage Blob, Application Insights 등 리소스 연결
 - **역할 기반 접근 제어(RBAC)** 및 네트워크 옵션 설정
@@ -60,7 +60,7 @@
 
 ---
 
-이 과정을 통해 참가자는 **Azure AI Foundry에서의 데이터-에이전트-관찰성 파이프라인**을 엔드투엔드로 경험할 수 있습니다.
+이 과정을 통해 참가자는 **Microsoft Foundry에서의 데이터-에이전트-관찰성 파이프라인**을 엔드투엔드로 경험할 수 있습니다.
 
 ---
 작성자: [annajeong@microsoft.com](mailto:annajeong@microsoft.com) · 본 문서는 출처를 명시할 경우 자유롭게 재활용할 수 있습니다.

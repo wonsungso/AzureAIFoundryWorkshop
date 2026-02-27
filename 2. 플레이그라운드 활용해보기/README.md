@@ -32,7 +32,7 @@
 
 ### 프로젝트에 Azure OpenAI 연결
 
-1. 브라우저에서 `Azure AI Foundry 탭`으로 이동합니다.
+1. 브라우저에서 `Microsoft Foundry 탭`으로 이동합니다.
 2. 왼쪽 메뉴 하단의 `관리 센터`를 클릭합니다.
 3. 왼쪽 프로젝트 섹션에서 `Connected resources`를 클릭합니다.
     
@@ -108,7 +108,7 @@
 한국 금융상품 중심으로 접근 가능한 공개 데이터 및 데이터 상품을 다운로드하여 데이터를 추가해 보도록 하겠습니다.
 
 - 데이터 상품 플랫폼
-    - [https://github.com/Anna-Jeong-MS/AzureAIFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt](https://github.com/Anna-Jeong-MS/AzureAIFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt)
+    - [https://github.com/Anna-Jeong-MS/MicrosoftFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt](https://github.com/Anna-Jeong-MS/MicrosoftFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt)
     - 금융 도메인의 뉴스, 금융 보고서, 용어 사전 등이 포함된 문서 + QA 짝으로 구성된 데이터셋. 챗봇 학습 / 평가용으로 유용
 
 ### **Azure AI 검색 구성**
@@ -120,7 +120,7 @@
     ![image.png](./images/image%209.png)
     
     - 구독 : 구독 선택
-    - 리소스 그룹 : Azure AI Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
+    - 리소스 그룹 : Microsoft Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
     - 서비스 이름 : `aisearch-<alias>`
     - 위치 : (US) East US
 4. 나머지 설정은 그대로 두고, `검토 + 만들기` 버튼을 클릭하여 검색 서비스를 생성합니다.
@@ -163,7 +163,7 @@
 
 ### 데이터 연결 권한 구성
 
-**Azure AI Foundry 포털**에서 각각의 서비스가 연결되기 위해서는 아래와 같은 역할 할당이 필요합니다.
+**Microsoft Foundry 포털**에서 각각의 서비스가 연결되기 위해서는 아래와 같은 역할 할당이 필요합니다.
 
 ![image.png](./images/image%2013.png)
 
@@ -217,7 +217,7 @@
 9. 같은 방법으로 역할 탭 `작업 기능 역할`에서 `Storage Blob 데이터 Contributor`를 클릭합니다.
 10. **관리 ID**에서 `Azure OpenAI`를 선택하고 목록에서 `openai-<alias>`를 클릭하고 `선택` 버튼을 클릭합니다.
 11. 마지막으로 역할 탭 `작업 기능 역할`에서 `독자`를 클릭합니다.
-12. **관리 ID**에서 `Azure AI Foundry project`를 선택하고 목록에서 `<alias>-project-resource/<alias>-project`를 클릭하고 `선택` 버튼을 클릭합니다.
+12. **관리 ID**에서 `Microsoft Foundry project`를 선택하고 목록에서 `<alias>-project-resource/<alias>-project`를 클릭하고 `선택` 버튼을 클릭합니다.
 
 ## 데이터 추가
 
@@ -288,7 +288,7 @@
 2. 아래와 같이 구성하고 `배포` 버튼을 클릭합니다.
     - 이름 : FinPilot-<alias>
     - 구독 : 본인 구독 선택
-    - 리소스 그룹 : Azure AI Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
+    - 리소스 그룹 : Microsoft Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
     - 위치 : Korea Central
     - 가격 책정 플랜 : Standard (S1)
     - 웹앱에서 채팅 기록 사용 체크
@@ -310,6 +310,6 @@
         - 서비스 트리 ID :
     - App Service 인증 설정 > 액세스 제한 : 인증되지 않은 액세스 허용
 8. 나머지 설정은 그대로 두고 `추가` 버튼을 클릭합니다.
-9. 다시 Azure AI Foundry 포털로 돌아와 웹앱 리스트에서 `FinPilot-<alias>`를 클릭하면 새 탭에서 [`https://finpilot-<alias>.azurewebsites.net/`](https://finpilot-annajeong.azurewebsites.net/) 사이트가 열리고 화면을 확인할 수 있습니다.
+9. 다시 Microsoft Foundry 포털로 돌아와 웹앱 리스트에서 `FinPilot-<alias>`를 클릭하면 새 탭에서 [`https://finpilot-<alias>.azurewebsites.net/`](https://finpilot-annajeong.azurewebsites.net/) 사이트가 열리고 화면을 확인할 수 있습니다.
     
     ![image.png](./images/image%2025.png)
