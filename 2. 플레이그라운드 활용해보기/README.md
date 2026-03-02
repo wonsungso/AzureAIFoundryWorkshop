@@ -20,7 +20,6 @@
     - Pricing tier : Standard S0
 5. `다음`, `만들기` 버튼을 클릭하여 리소스 생성을 완료합니다.
 6. 리소스 배포가 완료되면 `리소스로 이동` 버튼을 클릭합니다.
-7. 같은 방법으로 임베딩을 위한 `text-embedding-ada-002` 모델도 배포합니다.
 
 **Azure OpenAI ID 할당**
 
@@ -62,6 +61,7 @@
     
     ![image.png](./images/image%206.png)
     
+6. 같은 방법으로 임베딩을 위한 `text-embedding-ada-002` 모델도 배포합니다.
 
 ## 초기 프롬프트 구성
 
@@ -108,7 +108,7 @@
 한국 금융상품 중심으로 접근 가능한 공개 데이터 및 데이터 상품을 다운로드하여 데이터를 추가해 보도록 하겠습니다.
 
 - 데이터 상품 플랫폼
-    - [https://github.com/Anna-Jeong-MS/MicrosoftFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt](https://github.com/Anna-Jeong-MS/MicrosoftFoundryWorkshop-Portal/blob/main/assets/train-00000-of-00001.txt)
+    - [https://github.com/wonsungso/AzureAIFoundryWorkshop/blob/main/assets/train-00000-of-00001.txt](https://github.com/wonsungso/AzureAIFoundryWorkshop/blob/main/assets/train-00000-of-00001.txt)
     - 금융 도메인의 뉴스, 금융 보고서, 용어 사전 등이 포함된 문서 + QA 짝으로 구성된 데이터셋. 챗봇 학습 / 평가용으로 유용
 
 ### **Azure AI 검색 구성**
@@ -123,6 +123,7 @@
     - 리소스 그룹 : Microsoft Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
     - 서비스 이름 : `aisearch-<alias>`
     - 위치 : (US) East US
+> 참고 : 만약 East US 에서 `표준` 계층을 선택할 수 없다면, East US2를 선택해주세요.
 4. 나머지 설정은 그대로 두고, `검토 + 만들기` 버튼을 클릭하여 검색 서비스를 생성합니다.
 5. 리소스 배포가 완료되면 `리소스로 이동` 버튼을 클릭합니다.
 
@@ -145,7 +146,7 @@
 
 ### Azure Blob Storage 구성
 
-1. 상단 검색창에서 스토리지 계정을 검색하여 `스토리지 센터 | 스토리지 계정(Blob)` 화면으로 이동합니다.
+1. 상단 검색창에서 `스토리지 계정`을 검색하여 `스토리지 센터 | 스토리지 계정(Blob)` 화면으로 이동합니다.
 2. 상단의 `만들기` 버튼을 클릭합니다.
     
     ![image.png](./images/image%2012.png)
@@ -217,7 +218,7 @@
 9. 같은 방법으로 역할 탭 `작업 기능 역할`에서 `Storage Blob 데이터 Contributor`를 클릭합니다.
 10. **관리 ID**에서 `Azure OpenAI`를 선택하고 목록에서 `openai-<alias>`를 클릭하고 `선택` 버튼을 클릭합니다.
 11. 마지막으로 역할 탭 `작업 기능 역할`에서 `독자`를 클릭합니다.
-12. **관리 ID**에서 `Microsoft Foundry project`를 선택하고 목록에서 `<alias>-project-resource/<alias>-project`를 클릭하고 `선택` 버튼을 클릭합니다.
+12. **관리 ID**에서 `Azure AI Foundry 프로젝트`를 선택하고 목록에서 `<alias>-project-resource/<alias>-project`를 클릭하고 `선택` 버튼을 클릭합니다.
 
 ## 데이터 추가
 
@@ -227,7 +228,7 @@
     
     ![image.png](./images/image%2014.png)
     
-4. 데이터 원본 선택에서 `파일 업로드`를 선택합니다.
+4. 데이터 원본 선택에서 `파일 업로드(미리보기)`를 선택합니다.
 5. Azure Blob Storage 리소스 선택에서 생성한 `st<alias>project`를 선택합니다.
 6. 하단에 리소스에 대한 `CORS 켜기` 버튼을 클릭합니다.
     
@@ -286,7 +287,7 @@
 
 1. 상단의 `배포` 버튼을 클릭하고 `…웹앱으로` 버튼을 클릭합니다.
 2. 아래와 같이 구성하고 `배포` 버튼을 클릭합니다.
-    - 이름 : FinPilot-<alias>
+    - 이름 : FinPilot-`<alias>`
     - 구독 : 본인 구독 선택
     - 리소스 그룹 : Microsoft Foundry 구성에서 복사해 둔 리소스 그룹 이름을 선택
     - 위치 : Korea Central
