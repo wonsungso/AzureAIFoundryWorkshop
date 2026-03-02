@@ -33,12 +33,8 @@
 - 사용자 조건 → 펀드 속성 매핑 로직 설계
 - 추천 결과를 "사용자 요약 → 추천 펀드 목록 → 추천 사유" 형식으로 반환
 
-### 5. 모니터링 및 평가
-- **Application Insights**와 연동하여 로그/메트릭 수집
-- Foundry **Observability Dashboard**에서 성능·안정성 확인
-- KQL 쿼리로 traces / exceptions / dependencies 분석
+### 5. 평가
 - **Evaluation 메뉴**에서 CSV/JSONL 데이터셋 기반 품질·안전성 평가 수행
-- Groundedness, Relevance, ToolCallAccuracy 등 주요 지표 확인
 
 ---
 
@@ -48,7 +44,7 @@
 - 첫 번째 에이전트 구현 (CreditProfileAgent): **40분**  
 - **휴식: 10분** ☕  
 - 멀티 에이전트 구현 (FundRecommendationAgent): **50분**  
-- 모니터링 및 평가 실습: **30분**  
+- 평가 실습: **30분**  
 
 ---
 
