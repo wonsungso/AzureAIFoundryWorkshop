@@ -295,6 +295,10 @@
     - 웹앱에서 채팅 기록 사용 체크
     
     ![image.png](./images/image%2023.png)
+
+    > **참고** : `위치` 가 선택되지 않는 경우, Azure Portal에서 구독 -> 리소스 공급자 -> Microsoft.Web 을 등록해주세요
+    ![image.png](./images/image%2026.png)
+
     
 3. 상단 웹앱 배포 중 알림의 `배포 탭`을 클릭하여 배포 상태를 확인할 수 있습니다.
     
