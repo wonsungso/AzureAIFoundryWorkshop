@@ -1,4 +1,9 @@
-# 🚀 Microsoft Foundry Workshop
+> **📌 참고**
+> 이 워크샵은 **Microsoft Foundry 클래식 포털** 기반으로 작성되었습니다.
+> 
+> 새로운 포털 기반 워크샵은 [MicrosoftFoundryWorkshop-NewPortal](https://github.com/wonsungso/MicrosoftFoundryWorkshop-NewPortal/blob/main/README.md)을 참조하세요.
+
+# 🚀 Microsoft Foundry Workshop - Classic Portal
 
 이 워크샵은 **Microsoft Foundry**를 활용하여 실제 기업 환경에서 생성형 AI 애플리케이션을 어떻게 설계·구현·운영할 수 있는지를 엔드투엔드로 체험할 수 있도록 구성되었습니다.  
 
